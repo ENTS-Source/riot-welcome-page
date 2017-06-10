@@ -1,0 +1,175 @@
+<style type="text/css">
+    /* Inline CSS to avoid having to implement magic */
+
+    .ents-container {
+        display: block !important;
+        margin: 20px;
+    }
+
+    .ents-container h1,
+    .ents-container h2,
+    .ents-container h3,
+    .ents-container h4 {
+        font-weight: 600;
+    }
+
+    .ents-container h1 {
+        margin: 10px 20px 0 0;
+        color: #454545;
+    }
+
+    .ents-container h1 a {
+        color: #454545;
+    }
+
+    .ents-container h2 {
+        margin: 5px 20px 20px 0;
+        color: #454545;
+    }
+
+    .ents-container h3 {
+        margin-top: 30px;
+    }
+
+    .ents-hero {
+        border: 1px solid #1b9dd9;
+        background-color: #e5f7ff;
+        border-radius: 5px;
+        align-items: center;
+    }
+
+    .ents-hero .ents-hero-logo {
+        margin: 20px 40px;
+        display: inline;
+        height: 100px;
+    }
+
+    .ents-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ents-suggestion {
+        flex: 1 1 0;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .ents-room-link .ents-room-icon {
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+    }
+
+    .ents-room-comment {
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+        min-height: 64px;
+    }
+
+    .ents-room-name {
+        display: block;
+    }
+
+    .ents-room-description {
+        display: block;
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    .ents-room {
+        float: left;
+        text-decoration: none;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 150px;
+    }
+
+    .ents-room-link {
+        cursor: pointer;
+    }
+
+    .ents-top-row .ents-room {
+        width: 64px;
+    }
+</style>
+
+<div class="ents-container">
+    <div class="ents-hero ents-row">
+        <a href="https://ents.ca" target="_blank" rel="noopener">
+            <img src="home/ents/ents-logo.svg" class="ents-hero-logo">
+        </a>
+        <div>
+            <h1>Welcome to TangENTS</h1>
+            <h2>Create. Collaborate. Share.</h2>
+        </div>
+    </div>
+    <div class="ents-row ents-top-row">
+        <div class="ents-suggestion">
+            <div>
+                <h3>Search the room directory:</h3>
+                <a class="ents-room-link ents-room" href="#/directory">
+                    <!-- directory icon supplied by riot -->
+                    <img class="ents-room-icon" src="img/icons-directory.svg">
+                </a>
+                <span class="ents-room-comment">
+                    Check out the various communities available at ENTS.
+                </span>
+            </div>
+        </div>
+        <div class="ents-suggestion">
+            <div>
+                <h3>Chat with Riot Bot:</h3>
+                <a class="ents-room-link ents-room" href="#/user/@riot-bot:matrix.org?action=chat">
+                    <!-- we use a higher res version of the riot bot room icon -->
+                    <img class="ents-room-icon" src="home/ents/riotbot.png">
+                </a>
+                <span class="ents-room-comment">
+                    Get some tips on how to use Riot from Riot Bot.
+                </span>
+            </div>
+        </div>
+    </div>
+    <h3>ENTS Communities</h3>
+    <div class="ents-row">
+        <div class="ents-room">
+            <a class="ents-room-link" href="#/room/#ents:tang.ents.ca">
+                <img class="ents-room-icon" src="home/ents/rooms/ents.png">
+                <span class="ents-room-name">General Chat</span>
+            </a>
+            <span class="ents-room-description">Share cool ideas and talk about ENTS</span>
+        </div>
+        <div class="ents-room">
+            <a class="ents-room-link" href="#/room/#spam:tang.ents.ca">
+                <img class="ents-room-icon" src="home/ents/rooms/spam.png">
+                <span class="ents-room-name">Spam</span>
+            </a>
+            <span class="ents-room-description">Query the cameras with <code>!camera show workspace</code></span>
+        </div>
+        <div class="ents-room">
+            <a class="ents-room-link" href="#/room/#pottery:tang.ents.ca">
+                <img class="ents-room-icon" src="home/ents/rooms/pottery.png">
+                <span class="ents-room-name">Pottery</span>
+            </a>
+            <span class="ents-room-description">Chat with fellow potters and organize kiln firings</span>
+        </div>
+        <div class="ents-room">
+            <a class="ents-room-link" href="#/room/#metalshop:tang.ents.ca">
+                <img class="ents-room-icon" src="home/ents/rooms/metal.png">
+                <span class="ents-room-name">Metalshop</span>
+            </a>
+            <span class="ents-room-description">Discuss metalworking projects and practices</span>
+        </div>
+        <div class="ents-room">
+            <a class="ents-room-link" href="#/room/#rc:tang.ents.ca">
+                <img class="ents-room-icon" src="home/ents/rooms/rc.png">
+                <span class="ents-room-name">RC Chat</span>
+            </a>
+            <span class="ents-room-description">Quadcopters and everything else RC</span>
+        </div>
+    </div>
+</div>
